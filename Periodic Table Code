@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border=1px>
+        <tr style="background-color: yellow;">
+            <th colspan="18">
+                <h1>THE PERIODIC TABLE</h1>
+            </th>
+        </tr>
+        <!-- Row 1 -->
+        <tr style="font-size: large;">
+            <td bgcolor="orange" style="color: green;" data-magnetic="Non-magnetic"
+data-mass="1.008" 
+data-state="Gas" >1<br><abbr
+title="Hydrogen"> H</abbr></td>
+            <th colspan="16" style="empty-cells: hide;"></th>
+            <td bgcolor="#e8e3ff" style="color: green;" data-magnetic="Diamagnetic" data-mass="4.0026"  data-state="Gas">2<br><abbr         title="Helium">he</abbr></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="6.94" data-state="Solid">3<br><abbr title="Lithium"> Li</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="9.01"  data-state="Solid">4<br><abbr title="Berylium">Be</abbr></td>
+            <td colspan="10" style="empty-cells: hide;"></td>
+            <td bgcolor="#c6980e" data-magnetic="Diamagnetic" data-mass="10.81"  data-state="Solid">5<br><abbr title="Boron">B</abbr></td>
+            <td bgcolor="orange" data-magnetic="Paramagnetic" data-mass="12.001" data-state="Solid">6<br><abbr title="Carbon">C</abbr></td>
+            <td bgcolor="orange" style="color: green;" data-magnetic="Paramagnetic" data-mass="14.007" data-state="Gas">7<br><abbr title="Nitrogen">N</abbr></td>
+            <td bgcolor="orange" style="color: green;" data-magnetic="Diamagnetic" data-mass="15.99" data-state="Gas">8<br><abbr title="Oxygen">O</abbr></td>
+            <td bgcolor="#eddda8" style="color: green;" data-magnetic="Paramagnetic" data-mass="18.9" data-state="Gas">9<br><abbr title="Florine">F</abbr></td>
+            <td bgcolor="#e8e3ff" style="color: green;" data-magnetic="Diamagnetic" data-mass="20.18"  data-state="Gas">10<br><abbr title="Neon">Ne</abbr></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="22.9"  data-state="Solid">11<br><abbr title="Sodium">Na</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="24.3" data-state="Solid">12<br><abbr title="Magnesium">Mg</abbr></td>
+            <td colspan="10" style="empty-cells: hide;"></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="26.9" data-state="Solid">13<br><abbr title="Aluminium">Al</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="28.085" data-state="Solid">14<br><abbr title="Silicon">Si</abbr></td>
+            <td bgcolor="orange" data-magnetic="Diamagnetic" data-mass="30" data-state="Solid">15<br><abbr title="Phosphorus">P</abbr></td>
+            <td bgcolor="orange" data-magnetic="Paramagnetic" data-mass="32.4" data-state="Solid">16<br><abbr title="Sulphur">S</abbr></td>
+            <td bgcolor="#eddda8" data-magnetic="Paramagnetic" data-mass="35.9" data-state="Gas">17<br><abbr title="Chlorine">Cl</abbr></td>
+            <td bgcolor="#e8e3ff" data-magnetic="Diamagnetic" data-mass="39.09" data-state="Gas">18<br><abbr title="Argon">Ar</abbr></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="39.0" data-state="Solid">19<br><abbr title="Potassium">K</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="40.0" data-state="Solid">20<br><abbr title="Calcium">Ca</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="44.9" data-state="Solid">21<br><abbr title="Scandium">Sc</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="47.8" data-state="Solid">22<br><abbr title="Titanium">Ti</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="50.9" data-state="Solid">23<br><abbr title="Vanadium">V</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="51.9" data-state="Solid">24<br><abbr title="Chromium">Cr</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="54.9" data-state="Solid">25<br><abbr title="Manganese">Mn</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="55.8" data-state="Solid">26<br><abbr title="Iron">Fe</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="58.9" data-state="Solid">27<br><abbr title="Cobalt">Co</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="58.6" data-state="Solid">28<br><abbr title="Nickel">Ni</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="63.53" data-state="Solid">29<br><abbr title="Copper">Cu</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="65.3" data-state="Solid">30<br><abbr title="Zinc">Zn</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="69" data-state="Solid">31<br><abbr title="Gallium">Ga</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="72.4" data-state="Solid">32<br><abbr title="Germanium">Ge</abbr></td>
+            <td bgcolor="#c698
+    0e" data-magnetic="Diamagnetic"data-mass="74.98"  data-state="Solid">33<br><abbr title="Arsenic">As</abbr></td>
+            <td bgcolor="orange"  data-magnetic="Diamagnetic" data-mass="78" data-state="Solid">34<br><abbr title="Selenium">Se</abbr></td>
+            <td bgcolor="#eddda8" data-magnetic="Diamagnetic" data-mass="79.008" data-state="Liquid">35<br><abbr title="Bromine">Br</abbr></td>
+            <td bgcolor="#e8e3ff" data-magnetic="Diamagnetic" data-mass="83.08" data-state="Gas">36<br><abbr title="Krypton">Kr</abbr></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="85.008" data-state="Solid">37<br><abbr title="Rubidium">Rb</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="87.08" data-state="Solid">38<br><abbr title="Strontium">Sr</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="88." data-state="Solid">39<br><abbr title="Yttrium">Y</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="91.01" data-state="Solid">40<br><abbr title="Zirconium">Zr</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="92" data-state="Solid">41<br><abbr title="Niobium">Nb</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="95" data-state="Solid">42<br><abbr title="Molybdenum">Mo</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="98" data-state="Solid">43<br><abbr title="Technetium">Tc</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="101" data-state="Solid">44<br><abbr title="Ruthenium">Ru</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="102" data-state="Solid">45<br><abbr title="Rhodium">Rh</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="106" data-state="Solid">46<br><abbr title="Palladium">Pd</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="107" data-state="Solid">47<br><abbr title="Silver">Ag</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="112" data-state="Solid">48<br><abbr title="Cadmium">Cd</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="114" data-state="Solid">49<br><abbr title="Indium">In</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="118" data-state="Solid">50<br><abbr title="Tin">Sn</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="121" data-state="Solid">51<br><abbr title="Antimony">Sb</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="127" data-state="Solid">52<br><abbr title="Tellurium">Te</abbr></td>
+            <td bgcolor="#eddda8" data-magnetic="Diamagnetic" data-mass="126" data-state="Solid">53<br><abbr title="Iodine">I</abbr></td>
+            <td bgcolor="#e8e3ff" data-magnetic="Diamagnetic" data-mass="131" data-state="Gas">54<br><abbr title="Xenon">Xe</abbr></td>
+        </tr>
+        <!-- Row 6 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="132" data-state="Solid">55<br><abbr title="Cesium">Cs</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="137" data-state="Solid">56<br><abbr title="Barium">Ba</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="138.9" data-state="Solid">57<br><abbr title="Lanthanum">La</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="140.1" data-state="Solid">58<br><abbr title="Cerium">Ce</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="140.9" data-state="Solid">59<br><abbr title="Praseodymium">Pr</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="144.2" data-state="Solid">60<br><abbr title="Neodymium">Nd</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="145" data-state="Solid">61<br><abbr title="Promethium">Pm</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="150.4" data-state="Solid">62<br><abbr title="Samarium">Sm</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="152" data-state="Solid">63<br><abbr title="Europium">Eu</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="157.2" data-state="Solid">64<br><abbr title="Gadolinium">Gd</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="158.9" data-state="Solid">65<br><abbr title="Terbium">Tb</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="162.5" data-state="Solid">66<br><abbr title="Dysprosium">Dy</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="164.9" data-state="Solid">67<br><abbr title="Holmium">Ho</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="167.3" data-state="Solid">68<br><abbr title="Erbium">Er</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="168.9" data-state="Solid">69<br><abbr title="Thulium">Tm</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="173.1" data-state="Solid">70<br><abbr title="Ytterbium">Yb</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="175" data-state="Solid">71<br><abbr title="Lutetium">Lu</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="178" data-state="Solid">72<br><abbr title="Hafnium">Hf</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="180" data-state="Solid">73<br><abbr title="Tantalum">Ta</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="187" data-state="Solid">74<br><abbr title="Tungsten">W</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="186" data-state="Solid">75<br><abbr title="Rhenium">Re</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="190" data-state="Solid">76<br><abbr title="Osmium">Os</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="192" data-state="Solid">77<br><abbr title="Iridium">Ir</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="195" data-state="Solid">78<br><abbr title="Platinum">Pt</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="196" data-state="Solid">79<br><abbr title="Gold">Au</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="200" data-state="Liquid">80<br><abbr title="Mercury">Hg</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="204" data-state="Solid">81<br><abbr title="Thallium">Tl</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="207" data-state="Solid">82<br><abbr title="Lead">Pb</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="208" data-state="Solid">83<br><abbr title="Bismuth">Bi</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="209" data-state="Solid">84<br><abbr title="Polonium">Po</abbr></td>
+            <td bgcolor="#eddda8" data-magnetic="Paramagnetic" data-mass="209" data-state="Solid">85<br><abbr title="Astatine">At</abbr></td>
+            <td bgcolor="#e8e3ff" data-magnetic="Diamagnetic" data-mass="210" data-state="Gas">86<br><abbr title="Radon">Rn</abbr></td>
+        </tr>
+        <!-- Row 7 -->
+        <tr style="font-size: large;">
+            <td bgcolor="#df9fe1" data-magnetic="Paramagnetic" data-mass="223"data-state="Solid">87<br><abbr title="Francium">Fr</abbr></td>
+            <td bgcolor="#99d3ee" data-magnetic="Diamagnetic" data-mass="226"data-state="Solid">88<br><abbr title="Radium">Ra</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="227" data-state="Solid">89<br><abbr title="Actinium">Ac</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="232.04" data-state="Solid">90<br><abbr title="Thorium">Th</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="231.04" data-state="Solid">91<br><abbr title="Protactinium">Pa</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="238.03" data-state="Solid">92<br><abbr title="Uranium">U</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="237" data-state="Solid">93<br><abbr title="Neptunium">Np</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="244" data-state="Solid">94<br><abbr title="Plutonium">Pu</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="243" data-state="Solid">95<br><abbr title="Americium">Am</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="247" data-state="Solid">96<br><abbr title="Curium">Cm</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="247" data-state="Solid">97<br><abbr title="Berkelium">Bk</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="251" data-state="Solid">98<br><abbr title="Californium">Cf</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="252" data-state="Solid">99<br><abbr title="Einsteinium">Es</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="257" data-state="Solid">100<br><abbr title="Fermium">Fm</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="258" data-state="Solid">101<br><abbr title="Mendelevium">Md</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="259" data-state="Solid">102<br><abbr title="Nobelium">No</abbr></td>
+            <td bgcolor="#aaf7e8" data-magnetic="Paramagnetic" data-mass="262" data-state="Solid">103<br><abbr title="Lawrencium">Lr</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="267"data-state="Solid">104<br><abbr title="Rutherfordium">Rf</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="268"data-state="Solid">105<br><abbr title="Dubnium">Db</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="269"data-state="Solid">106<br><abbr title="Seaborgium">Sg</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="270"data-state="Solid">107<br><abbr title="Bohrium">Bh</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="269"data-state="Solid">108<br><abbr title="Hassium">Hs</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="278"data-state="Solid">109<br><abbr title="Meitnerium">Mt</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="281"data-state="Solid">110<br><abbr title="Darmstadtium">Ds</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="282"data-state="Solid">111<br><abbr title="Roentgenium">Rg</abbr></td>
+            <td bgcolor="#fcf389" data-magnetic="Paramagnetic" data-mass="285"data-state="Solid">112<br><abbr title="Copernicium">Cn</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="286"data-state="Solid">113<br><abbr title="Nihonium">Nh</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="289"data-state="Solid">114<br><abbr title="Flerovium">Fl</abbr></td>
+            <td bgcolor="#cfeb88" data-magnetic="Paramagnetic" data-mass="290"data-state="Solid">115<br><abbr title="Moscovium">Mc</abbr></td>
+            <td bgcolor="#c6980e" data-magnetic="Paramagnetic" data-mass="294"data-state="Solid">116<br><abbr title="Livermorium">Lv</abbr></td>
+            <td bgcolor="#eddda8" data-magnetic="Paramagnetic" data-mass="294"data-state="Solid">117<br><abbr title="Tennessine">Ts</abbr></td>
+            <td bgcolor="#e8e3ff" data-magnetic="Diamagnetic" data-mass="294"data-state="Gas">118<br><abbr title="Oganesson">Og</abbr></td>
+</tr>
+
+</table>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border=1px>
+        <!-- Your table code here -->
+    </table>
+
+    <!-- Element Information Display -->
+    <div id="elementInfo"></div>
+
+    <!-- JavaScript code to display element information -->
+    <script>
+        var superconductivityData = {
+    "H": "No",
+    "He": "Yes",
+    "Li": "No",
+    "Be": "No",
+    "B": "No",
+    "C": "No",
+    "N": "No",
+    "O": "No",
+    "F": "No",
+    "Ne": "No",
+    "Na": "No",
+    "Mg": "No",
+    "Al": "No",
+    "Si": "No",
+    "P": "No",
+    "S": "No",
+    "Cl": "No",
+    "Ar": "No",
+    "K": "No",
+    "Ca": "No",
+    "Sc": "No",
+    "Ti": "No",
+    "V": "No",
+    "Cr": "No",
+    "Mn": "No",
+    "Fe": "No",
+    "Co": "No",
+    "Ni": "No",
+    "Cu": "Yes",
+    "Zn": "No",
+    "Ga": "No",
+    "Ge": "No",
+    "As": "No",
+    "Se": "No",
+    "Br": "No",
+    "Kr": "No",
+    "Rb": "No",
+    "Sr": "No",
+    "Y": "No",
+    "Zr": "No",
+    "Nb": "Yes",
+    "Mo": "Yes",
+    "Tc": "Yes",
+    "Ru": "Yes",
+    "Rh": "Yes",
+    "Pd": "Yes",
+    "Ag": "Yes",
+    "Cd": "Yes",
+    "In": "No",
+    "Sn": "No",
+    "Sb": "No",
+    "Te": "No",
+    "I": "No",
+    "Xe": "No",
+    "Cs": "No",
+    "Ba": "No",
+    "La": "No",
+    "Ce": "No",
+    "Pr": "No",
+    "Nd": "No",
+    "Pm": "No",
+    "Sm": "No",
+    "Eu": "No",
+    "Gd": "No",
+    "Tb": "No",
+    "Dy": "No",
+    "Ho": "No",
+    "Er": "No",
+    "Tm": "No",
+    "Yb": "No",
+    "Lu": "No",
+    "Hf": "No",
+    "Ta": "Yes",
+    "W": "Yes",
+    "Re": "Yes",
+    "Os": "Yes",
+    "Ir": "Yes",
+    "Pt": "Yes",
+    "Au": "Yes",
+    "Hg": "Yes",
+    "Tl": "No",
+    "Pb": "No",
+    "Bi": "No",
+    "Po": "No",
+    "At": "No",
+    "Rn": "No",
+    "Fr": "No",
+    "Ra": "No",
+    "Ac": "No",
+    "Th": "No",
+    "Pa": "No",
+    "U": "No",
+    "Np": "No",
+    "Pu": "No",
+    "Am": "No",
+    "Cm": "No",
+    "Bk": "No",
+    "Cf": "No",
+    "Es": "No",
+    "Fm": "No",
+    "Md": "No",
+    "No": "No",
+    "Lr": "No",
+    "Rf": "No",
+    "Db": "No",
+    "Sg": "No",
+    "Bh": "No",
+    "Hs": "No",
+    "Mt": "No",
+    "Ds": "No",
+    "Rg": "No",
+    "Cn": "No",
+    "Nh": "No",
+    "Fl": "No",
+    "Mc": "No",
+    "Lv": "No",
+    "Ts": "No",
+    "Og": "No"
+};
+        // Get all table cells
+        var cells = document.querySelectorAll('td');
+
+        // Add click event listener to each cell
+        cells.forEach(function(cell) {
+            cell.addEventListener('click', function() {
+                // Retrieve element information
+                var atomicNumber = this.textContent.trim().split('\n')[0];
+                var elementName = this.querySelector('abbr').getAttribute('title');
+                var symbol = this.querySelector('abbr').textContent.trim();
+                var atomicMass = this.getAttribute('data-mass');
+                var magneticProperty = this.getAttribute('data-magnetic');
+                var state = this.getAttribute('data-state');
+                var superconductivity = superconductivityData[symbol] || "Unknown"; // Retrieve superconductivity data
+
+               // Construct the information string
+                var elementInfo = "Atomic Number: " + atomicNumber + "<br>" +
+                    "Element Name: " + elementName + "<br>" +
+                    "Symbol: " + symbol + "<br>" +
+                    "Atomic Mass: " + atomicMass + "<br>" +
+                    "Magnetic Property: " + magneticProperty + "<br>" +        
+                    "State: " + state + "<br>"+
+                    "Superconductivity: " + superconductivity + "<br>";
+
+
+                // Display element information
+                document.getElementById('elementInfo').innerHTML = "<h2>" + elementInfo + "</h2>";
+            });
+        });
+    </script>
+</body>
+ </script>
+        <div style="text-align:left; margine-lef:10px;">
+    <p>.Aditya Deshpande</p>
+
+    </script>
+</html>
+</body>
+
+</html>
