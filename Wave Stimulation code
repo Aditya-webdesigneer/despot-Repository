@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave Simulation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color:#0;
+    }
+    canvas {
+        border: 1px solid black   ;
+        margin: 10px;
+    }
+    #controls {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1><big><centre>Wave Simulation</centre></big></h1>
+    <div id="controls">
+        <label for="waveColor">Select Color:</label>
+        <input type="color" id="waveColor" value="#00ff00"><br><br>
+        
+        <h2>First Wave</h2>
+        <label for="firstWavelength">Wavelength:</label>
+        <input type="number" id="firstWavelength" min="1" value="100"> px<br><br>
+        <label for="firstAmplitude">Amplitude:</label>
+        <input type="number" id="firstAmplitude" min="10" value="50"> px<br><br>
+        <label for="firstFrequency">Frequency:</label>
+        <input type="number" id="firstFrequency" min="1" value="5"> Hz<br><br>
+        <label for="firstSpeed">Speed:</label>
+        <input type="number" id="firstSpeed" min="1" value="100"> px/s<br><br>
+        <label for="firstTime">Time:</label>
+        <input type="number" id="firstTime" min="0" value="0"> s<br><br>
+        
+        <h2>Second Wave</h2>
+        <label for="secondWavelength">Wavelength:</label>
+        <input type="number" id="secondWavelength" min="1" value="120"> px<br><br>
+        <label for="secondAmplitude">Amplitude:</label>
+        <input type="number" id="secondAmplitude" min="10" value="60"> px<br><br>
+        <label for="secondFrequency">Frequency:</label>
+        <input type="number" id="secondFrequency" min="1" value="7"> Hz<br><br>
+        <label for="secondSpeed">Speed:</label>
+        <input type="number" id="secondSpeed" min="1" value="120"> px/s<br><br>
+        <label for="secondTime">Time:</label>
+        <input type="number" id="secondTime" min="0" value="0"> s<br><br>
+        
+        <h2>Resultant Wave</h2>
+        <label for="resultantWavelength">Wavelength:</label>
+        <input type="number" id="resultantWavelength" min="1" value="200"> px<br><br>
+        <label for="resultantAmplitude">Amplitude:</label>
+        <input type="number" id="resultantAmplitude" min="10" value="70"> px<br><br>
+        <label for="resultantFrequency">Frequency:</label>
+        <input type="number" id="resultantFrequency" min="1" value="8"> Hz<br><br>
+        <label for="resultantSpeed">Speed:</label>
+        <input type="number" id="resultantSpeed" min="1" value="150"> px/s<br><br>
+        <label for="resultantTime">Time:</label>
+        <input type="number" id="resultantTime" min="0" value="0"> s<br><br>
+    </div>
+
+    <canvas id="waveCanvas" width="800" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('waveCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function drawWave(wavelength, amplitude, frequency, speed, time, color) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.beginPath();
+            for (let x = 0; x < canvas.width; x += 1) {
+                const y = canvas.height / 2 + amplitude * Math.sin(2 * Math.PI * frequency * x / wavelength - 2 * Math.PI * time * frequency / speed);
+                ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = color;
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height / 2);
+            ctx.lineTo(canvas.width, canvas.height / 2);
+            ctx.strokeStyle = 'black';
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(canvas.width / 2, 0);
+            ctx.lineTo(canvas.width / 2, canvas.height);
+            ctx.stroke();
+        }
+        
+        function updateWaves() {
+            const waveColor = document.getElementById('waveColor').value;
+            
+            const firstWavelength = parseInt(document.getElementById('firstWavelength').value);
+            const firstAmplitude = parseInt(document.getElementById('firstAmplitude').value);
+            const firstFrequency = parseInt(document.getElementById('firstFrequency').value);
+            const firstSpeed = parseInt(document.getElementById('firstSpeed').value);
+            const firstTime = parseInt(document.getElementById('firstTime').value);
+            
+            const secondWavelength = parseInt(document.getElementById('secondWavelength').value);
+            const secondAmplitude = parseInt(document.getElementById('secondAmplitude').value);
+            const secondFrequency = parseInt(document.getElementById('secondFrequency').value);
+            const secondSpeed = parseInt(document.getElementById('secondSpeed').value);
+            const secondTime = parseInt(document.getElementById('secondTime').value);
+            
+            const resultantWavelength = parseInt(document.getElementById('resultantWavelength').value);
+            const resultantAmplitude = parseInt(document.getElementById('resultantAmplitude').value);
+            const resultantFrequency = parseInt(document.getElementById('resultantFrequency').value);
+            const resultantSpeed = parseInt(document.getElementById('resultantSpeed').value);
+            const resultantTime = parseInt(document.getElementById('resultantTime').value);
+            
+            drawWave(firstWavelength, firstAmplitude, firstFrequency, firstSpeed, firstTime, waveColor);
+            drawWave(secondWavelength, secondAmplitude, secondFrequency, secondSpeed, secondTime, waveColor);
+            drawWave(resultantWavelength, resultantAmplitude, resultantFrequency, resultantSpeed, resultantTime, waveColor);
+        }
+        
+        document.getElementById('waveColor').addEventListener('change', function() {
+            updateWaves();
+        });
+        
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', function() {
+                updateWaves();
+            });
+        });
+        
+        updateWaves();
+
+        </script>
+        <div style="text-align:left; margine-lef:10px;">
+    <p>.Aditya Deshpande</p>
+  
+    </script>
+</body>
+</html>
